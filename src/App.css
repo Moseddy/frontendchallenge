@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Manrope:wght@200;300;500;600;700&family=Public+Sans:wght@200;300;400;500;600;700&display=swap');
+
+/* ======================  VARIABLE CSS  ====================== */
+
+:root {
+
+  /* ========  Font and Typography ======== */
+  --body-font-sans: "Public-sans", sans-serif;
+  --body-font-manrope: "Manrope", sans-serif;
+
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ======================  BASE  ====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body{
+  background-color: #abcdef;
+  color: var(--text-color);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none; 
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ======================  LAYOUT  ====================== */
+.container{
+  width: 375px;
+  height: 731px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+  position: relative;
 }

@@ -1,0 +1,20 @@
+.btn__link {
+    display: inline-block;
+    background-color: #f7f7f7;
+    height: 87px;
+    width: 109px;
+    padding: 22px 27px;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+
+}
+
+.btn__link i {
+    font-size: 22px;
+    color: #535B5B;
+
+}
+
